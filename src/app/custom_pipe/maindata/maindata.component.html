@@ -1,0 +1,15 @@
+<table>
+    <thead>
+<td>empname</td>
+<td>gender</td>
+<td>salary</td>
+    </thead>
+    <tbody>
+    <tr *ngFor = 'let emp of emoployees'>
+        debugger;
+   <td>{{emp.empname}}</td>
+   <td>{{emp.gender | gendersetter}}</td>
+   <td>{{emp.salary}}</td>
+    </tr>
+</tbody>
+</table>

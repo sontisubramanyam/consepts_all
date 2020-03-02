@@ -1,0 +1,92 @@
+.round-button {
+    display:block;
+    width:50px;
+    height:50px;
+    line-height:34px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #555777;
+    box-shadow: 0 0 3px gray;
+    font-size:4rem;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #777555;
+}
+.btn-info{
+  border-radius: 6px 23px;
+  margin-right: 4%;
+}
+.resourceTitle {
+  color: #034EDF;
+  margin: 10px 0px;
+}
+.search-bar {
+  margin: 3% 0%;
+}
+
+    
+/*--------------------------- POPUP CSS Start -------------------------*/
+.popup-Modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4588235294117647);
+    min-height: 85vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .mat-tab-group.calendar {
+    z-index: 0 !important;
+    position: relative;
+  }
+  
+  .back-body {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .front-sec {
+    background-color: transparent;
+    position: absolute;
+    top: 5vh;
+    width:100%;
+  }
+  
+  .front-body {
+    background-color: #f5f5f5;
+    overflow: auto;
+    z-index: 1000;
+  }
+  
+  span.error {
+    color: red;
+  }
+  
+  .front-body {
+    padding: 30px 40px !important;
+    border-radius: 10px;
+  }
+  
+  label.primaryColor {
+    color: rgba(15, 92, 207, 1) !important;
+  }
+  
+  .crossIcon {
+    color: rgba(15, 92, 207, 1) !important;
+  }
+  
+  /*--------------------------- POPUP CSS End -------------------------*/
+  .txt-center {
+    text-align: center;
+  }
+  .pmle-primary-text-color {
+    color: rgba(15, 92, 207, 1);
+  }
+  

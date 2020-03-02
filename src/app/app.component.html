@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark zero" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <span>
+        <a class="nav-item nav-link homeGap" routerLink="/">Home</a>
+    </span>
+    <span>
+        <a class="nav-item nav-link homeGap" routerLink="dashBoard">Dashboard</a>
+    </span>
+    <span>
+        <a class="nav-item nav-link homeGap" routerLink="mainUser">MainUser</a>
+    </span>
+    <span>
+        <a class="nav-item nav-link homeGap" routerLink="subUser">SubUser</a>
+    </span>
+    <span>
+        <a class="nav-item nav-link homeGap" routerLink="custompipe">Custom Pipe</a>
+    </span>
+        <span class="align-right">
+        <a class="nav-item nav-link homeGap" (click)="logout()">Logout</a>
+        </span>
+    </div>
+</nav>
+
+<!-- main content container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 col-lg-12">
+                <div *ngIf="showLoadingIndicator" class="spinner"></div>
+                <router-outlet></router-outlet>
+                <app-loader></app-loader>
+            </div>
+        </div>
+    </div>
+</div>

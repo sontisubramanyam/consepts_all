@@ -1,0 +1,17 @@
+<h1>This is the child component !</h1>
+<h2>It wants to say "Hey " to its parent.</h2>
+It also wants to receive a response from its child.
+<p>
+  <b>Response from parent : "{{ receivedParentMessage }}"</b>
+</p>
+<button (click)="sendMessageToParent(messageToSendC)">Send to Parent</button>
+
+
+<!-- unrelatedComp -->
+<!-- {{servicemessage}}
+<button (click)="newMessage()">New Message</button> -->
+
+<!-- 1.Parent to Child via @Input() decorator. -->
+<!-- <div class="notifications" *ngFor="let n of notifications">
+    {{ n.message }}
+</div> -->
